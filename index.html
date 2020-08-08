@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    div:not(.d3-tip):not(.container) {
+      width: 50%;
+      display: inline-block;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    svg {
+      border: 1px solid #ccc;
+      /* padding: 10px; */
+      margin: 10px;
+    }
+
+    #tooltip {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      text-align: center;
+      /* width: 150px; */
+      width: auto;
+      /* height: 50px; */
+      padding: 7px;
+      font-size: 1rem;
+      background: #333;
+      color: #fff;
+      box-shadow: 1px 1px 10px #000;
+      border-radius: 2px;
+      pointer-events: none;
+    }
+
+    body {
+      background-color: #f1f3f3;
+    }
+    .axis {
+      font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #d4d8da;
+      stroke-width: 2px;
+      shape-rendering: crispEdges;
+    }
+
+    .line {
+      fill: none;
+      stroke: #6f257f;
+      stroke-width: 5px;
+    }
+
+    .overlay {
+      fill: none;
+      pointer-events: all;
+    }
+
+    .focus circle {
+      fill: #f1f3f3;
+      stroke: #6f257f;
+      stroke-width: 5px;
+    }
+
+    .hover-line {
+      stroke: #6f257f;
+      stroke-width: 2px;
+      stroke-dasharray: 3, 3;
+    }
+
+  </style>
+  <body>
+    <h1>Hello</h1>
+    <div class="container">
+      <div id="force_graph"></div>
+      <div id="force"></div>
+      <div id="map"></div>
+      <div id="area"></div>
+      <div id="stacked_area"></div>
+      <div id="new_line"></div>
+      <div id="heat"></div>
+      <div id="scatter-2"></div>
+      <div id="bar"></div>
+      <div id="scatter"></div>
+      <div id="donut"></div>
+      <div id="main"></div>
+      <div id="line"></div>
+      <div id="bubble">
+        <div class="controls">
+          <button class="play-btn">⏸︎</button>
+          <button class="reset-btn">⏏︎</button>
+          <select class="select-input">
+            <option value="all">All</option>
+          </select>
+          <input type="range" class="year-range" min="1810" max="2014" />
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://d3js.org/d3.v5.js"></script> -->
+    <script src="js/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="js/colorlegend.js"></script>
+    <script src="js/d3-tip (1).js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/donut.js"></script>
+    <script src="js/line.js"></script>
+    <script src="js/bubble.js"></script>
+    <script src="js/scatter.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/scatter-2.js"></script>
+    <script src="js/heat.js"></script>
+    <script src="js/new_line.js"></script>
+    <script src="js/area.js"></script>
+    <script src="js/stacked_area.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/force.js"></script>
+    <script src="js/force_graph.js"></script>
+  </body>
+</html>

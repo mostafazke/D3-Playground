@@ -1,0 +1,12 @@
+data join with data method
+add elements to match data length after enter()
+substract elements to match data length after exit()
+load extrenal data (.text(), .json(), .csv(), .tsv());
+create linear scale: d3.scaleLinear().domain([min, max]).range([min, max]);
+create logarithm scale: d3.scaleLog().domain([min, max]).range([min, max]).base(factor);
+create time scale: d3.scaleTime().domain([min(js date obj), max(js date obj)]).range([min, max]);
+create ordinal scale: d3.scaleOrdinal().domain([values]).range([values]); // useful for mapping value with colors
+create band scale: d3.scaleBand().domain([values]).range([min, max]).paddingInner(num).paddingOuter(num);
+use min , max , extent
+add margins, group, transform
+create axis with axis[direction]() method
