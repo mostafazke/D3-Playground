@@ -42,7 +42,7 @@
 
   const yScale = d3.scaleLinear().range([0, config.height]);
   const color = d3.scaleOrdinal(d3.schemeCategory10);
-  d3.json("../data/buildings.json")
+  d3.json("data/buildings.json")
     .then((data) => {
       color.domain(data.map((d) => d.name));
 

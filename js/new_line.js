@@ -31,7 +31,7 @@
     .attr('width', width)
     .attr('height', height);
 
-  d3.json('../data/new_line.json')
+  d3.json('data/new_line.json')
     .then((data) => {
       data.forEach(function (d) {
         d.year = parseTime(d.year);

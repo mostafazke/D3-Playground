@@ -26,7 +26,7 @@
       .y1((d) => yScale(d.value))
       .y0(yScale(0));
     
-    d3.json('../data/coins.json')
+    d3.json('data/coins.json')
       .then((res) => {
         const data = res.bitcoin;
         data.forEach((d) => {

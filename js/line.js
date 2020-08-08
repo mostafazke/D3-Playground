@@ -9,7 +9,7 @@
     .attr("width", width)
     .attr("height", height);
 
-  d3.csv("../data/big-mac-raw-index.csv")
+  d3.csv("data/big-mac-raw-index.csv")
     .then((data) => {
       const allData = data.map(({ date, name, dollar_price, iso_a3 }) => ({
         name,

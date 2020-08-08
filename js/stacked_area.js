@@ -36,7 +36,7 @@
 
   const color = d3.scaleOrdinal().range(d3.schemeCategory10);
 
-  d3.csv('../data/unemployment.csv')
+  d3.csv('data/unemployment.csv')
     .then((data) => {
       data = data.map((d) => ({
         date: parseTime(d.date),

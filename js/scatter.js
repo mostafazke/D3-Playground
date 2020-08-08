@@ -22,7 +22,7 @@
   const xScale = d3.scaleLinear().range([margin.left, width - margin.right]);
   const yScale = d3.scaleLinear().range([height - margin.bottom, margin.top]);
   const colors = d3.scaleOrdinal().range(d3.schemeCategory10);
-  d3.csv("../data/scatter_data.csv").then((data) => {
+  d3.csv("data/scatter_data.csv").then((data) => {
     data.map((d) => {
       d.profit_mm = +d.profit_mm;
       d.revenues_mm = +d.revenues_mm;

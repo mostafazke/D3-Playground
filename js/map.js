@@ -15,7 +15,7 @@ const path = d3.geoPath().projection(projection);
 
 const graticule = d3.geoGraticule()
 
-d3.json('../data/countries-110m.json').then(data => {
+d3.json('data/countries-110m.json').then(data => {
     
     svg.append('g').attr('class', 'countries').selectAll('path')
     .data(topojson.feature(data, data.objects.countries).features)
