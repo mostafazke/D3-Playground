@@ -43,7 +43,6 @@
       node.append('title').text((d) => d.id);
 
       simulation.on('tick', () => {
-          console.log(nodes);
         link
           .attr('x1', (d) => d.source.x)
           .attr('y1', (d) => d.source.y)

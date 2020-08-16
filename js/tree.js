@@ -21,11 +21,6 @@
       root.dx = 10;
       root.dy = width / (root.height + 1);
 
-      
-      console.log(data);
-      console.log(root);
-      console.log(tree(root));
-
       const link = g
         .append('g')
         .attr('fill', 'none')
