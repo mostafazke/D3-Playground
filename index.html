@@ -21,7 +21,7 @@
       margin: 0;
       padding: 0;
     }
-    div:not(.d3-tip):not(.container) {
+    .shape {
       width: 50%;
       display: inline-block;
     }
@@ -92,29 +92,34 @@
       stroke-width: 2px;
       stroke-dasharray: 3, 3;
     }
+    .node--hover {
+      stroke: #6f257f;
+      stroke-width: 2px;
+    }
 
   </style>
   <body>
     <h1>Hello</h1>
     <div class="container">
-      <div id="egypt_treemap"></div>
-      <div id="zoom_treemap"></div>
-      <div id="treemap"></div>
-      <div id="tree"></div>
-      <div id="force_graph"></div>
-      <div id="force"></div>
-      <div id="map"></div>
-      <div id="area"></div>
-      <div id="stacked_area"></div>
-      <div id="new_line"></div>
-      <div id="heat"></div>
-      <div id="scatter-2"></div>
-      <div id="bar"></div>
-      <div id="scatter"></div>
-      <div id="donut"></div>
-      <div id="main"></div>
-      <div id="line"></div>
-      <div id="bubble">
+      <div class="shape" id="circle_packing"></div>
+      <div class="shape" id="egypt_treemap"></div>
+      <div class="shape" id="zoom_treemap"></div>
+      <div class="shape" id="treemap"></div>
+      <div class="shape" id="tree"></div>
+      <div class="shape" id="force_graph"></div>
+      <div class="shape" id="force"></div>
+      <div class="shape" id="map"></div>
+      <div class="shape" id="area"></div>
+      <div class="shape" id="stacked_area"></div>
+      <div class="shape" id="new_line"></div>
+      <div class="shape" id="heat"></div>
+      <div class="shape" id="scatter-2"></div>
+      <div class="shape" id="bar"></div>
+      <div class="shape" id="scatter"></div>
+      <div class="shape" id="donut"></div>
+      <div class="shape" id="main"></div>
+      <div class="shape" id="line"></div>
+      <div class="shape" id="bubble">
         <div class="controls">
           <button class="play-btn">⏸︎</button>
           <button class="reset-btn">⏏︎</button>
@@ -149,5 +154,6 @@
     <script src="js/treemap.js"></script>
     <script src="js/zoom_treemap.js"></script>
     <script src="js/egypt_treemap.js"></script>
+    <script src="js/circle_packing.js"></script>
   </body>
 </html>
